@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph</title>
+	<style>
+		html, * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.grid {
+			position: relative;
+			background: lightgreen;
+			margin: 10px auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		p:nth-child(1) {
+			padding: 10px;
+			text-align: center;
+			font-family: ubuntu;
+			font-weight: bolder;
+			display: flex;
+			justify-content: space-around;
+			font-size: 20px;
+		}
+
+		p > span {
+			text-transform: uppercase;
+			color: gray;
+		}
+		.head__button {
+			padding: 5px 30px;
+		}
+
+
+	</style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<p>
+		<span>Graph</span>
+		<span>
+			<button class="head__button graph">Original Graph</button>
+			<button class="head__button dijstras">Dijkstra's</button>
+		</span>	
+	</p>
+	
+	<canvas class='grid' width="1500", height="650">
+		
+
+	</canvas>
+
+	<script src="dijkstra.js"></script>
+</body>
+</html>
